@@ -1,30 +1,30 @@
 <script lang="ts" context="module">
-	export const prerender = true;
+  export const prerender = true;
   export async function load({ fetch }) {
-    const url = `/index.json`
-    const res = await fetch(url)
+    const url = `/index.json`;
+    const res = await fetch(url);
 
     if (res.ok) {
       return {
         props: await res.json()
-      }
+      };
     }
 
     return {
       status: res.status,
       error: new Error(`Could not load ${url}`)
-    }
+    };
   }
 </script>
 
 <script lang="ts">
-  import githubIconUrl from '$assets/github.svg?url'
-  import { GITHUB_LOGIN } from '$lib/constants'
-  import type { PinnedRepositories } from '$types/common'
+  import githubIconUrl from '$assets/github.svg?url';
+  import { GITHUB_LOGIN } from '$lib/constants';
+  import type { PinnedRepositories } from '$types/common';
 
-  export let name: string
-  export let email: string
-  export let pinnedRepositories: PinnedRepositories
+  export let name: string;
+  export let email: string;
+  export let pinnedRepositories: PinnedRepositories;
 </script>
 
 <svelte:head>

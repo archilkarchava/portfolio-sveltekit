@@ -1,5 +1,5 @@
-import preprocess from 'svelte-preprocess'
-import path from 'path'
+import preprocess from 'svelte-preprocess';
+import path from 'path';
 import netlify from '@sveltejs/adapter-netlify';
 import svg from '@poppanator/sveltekit-svg';
 
@@ -25,7 +25,7 @@ export default {
           $style: path.resolve('./src/style'),
           $types: path.resolve('./src/types')
         }
-      },
+      }
     }
   }
-}
+};

@@ -1,4 +1,4 @@
-import { githubGraphqlApiEndpoint, GITHUB_TOKEN } from '$lib/constants'
+import { githubGraphqlApiEndpoint, GITHUB_TOKEN } from '$lib/constants';
 import { createClient } from '@urql/core';
 
 export const githubClient = createClient({
@@ -6,7 +6,7 @@ export const githubClient = createClient({
   requestPolicy: 'network-only',
   fetchOptions: () => ({
     headers: {
-      Authorization: GITHUB_TOKEN ? `Bearer ${GITHUB_TOKEN}` : '',
-    },
+      Authorization: GITHUB_TOKEN ? `Bearer ${GITHUB_TOKEN}` : ''
+    }
   })
-})
+});

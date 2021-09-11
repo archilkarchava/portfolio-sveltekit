@@ -25,7 +25,7 @@ export default {
           $style: path.resolve('./src/style'),
           $types: path.resolve('./src/types')
         }
-      }
+      },
     }
   }
 }

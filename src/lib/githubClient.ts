@@ -1,7 +1,7 @@
 import { githubGraphqlApiEndpoint, GITHUB_TOKEN } from '$lib/constants'
-import { createClient } from '@urql/svelte';
+import { createClient } from '@urql/core';
 
-export const githubApolloClient = createClient({
+export const githubClient = createClient({
   url: githubGraphqlApiEndpoint,
   requestPolicy: 'network-only',
   fetchOptions: () => ({

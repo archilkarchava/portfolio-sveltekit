@@ -1,5 +1,13 @@
-module.exports = {
-  mode: 'jit',
-  purge: ['./src/**/*.{html,js,svelte,ts}'],
-  darkMode: 'media'
-}
+const config = {
+	mode: "jit",
+  darkMode: 'media',
+	purge: [
+		"./src/**/*.{html,js,svelte,ts}",
+	],
+	theme: {
+		extend: {},
+	},
+	plugins: [],
+};
+
+module.exports = config;

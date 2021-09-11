@@ -2,9 +2,7 @@
 	"compilerOptions": {
 		"moduleResolution": "node",
 		"module": "es2020",
-		"lib": [
-			"es2020"
-		],
+		"lib": ["es2020"],
 		"target": "es2019",
 		/**
 			svelte-preprocess cannot figure out whether you have a value or a type, so tell TypeScript
@@ -25,33 +23,14 @@
 		"allowJs": true,
 		"checkJs": true,
 		"paths": {
-			"$components/*": [
-				"components/*"
-			],
-			"$lib/*": [
-				"lib/*"
-			],
-			"$routes/*": [
-				"routes/*"
-			],
-			"$assets/*": [
-				"assets/*"
-			],
-			"$styles/*": [
-				"styles/*"
-			],
-			"$types/*": [
-				"types/*"
-			]
+			"$components/*": ["components/*"],
+			"$lib/*": ["lib/*"],
+			"$routes/*": ["routes/*"],
+			"$assets/*": ["assets/*"],
+			"$styles/*": ["styles/*"],
+			"$types/*": ["types/*"]
 		}
 	},
-	"include": [
-		"src/**/*.d.ts",
-		"src/**/*.js",
-		"src/**/*.ts",
-		"src/**/*.svelte"
-	],
-	"exclude": [
-		"**/generated"
-	]
+	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts", "src/**/*.svelte"],
+	"exclude": ["**/generated"]
 }

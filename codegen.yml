@@ -1,8 +1,8 @@
 schema:
-  - ${GITHUB_GRAPHQL_API_ENDPOINT}:
+  - ${VITE_GITHUB_GRAPHQL_API_ENDPOINT}:
       headers:
-        Authorization: Bearer ${GITHUB_TOKEN}
-documents: src/**/!(*.d).{js,jsx,ts,tsx,graphql}
+        Authorization: Bearer ${VITE_GITHUB_TOKEN}
+documents: src/**/!(*.d).{js,ts,svelte,graphql}
 generates:
   ./src/schema.graphql:
     plugins:

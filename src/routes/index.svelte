@@ -55,7 +55,13 @@
           rel="noopener noreferrer"
           class="text-current hover:opacity-70"
         >
-          <img alt="Github Icon" src={githubIconUrl} class="w-6 h-6 sm:w-9 sm:h-9" />
+          <img
+            alt="Github Icon"
+            src={githubIconUrl}
+            width="36px"
+            height="36px"
+            class="w-6 h-6 sm:w-9 sm:h-9"
+          />
         </a>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import preprocess from 'svelte-preprocess';
 import path from 'path';
-import netlify from '@sveltejs/adapter-netlify';
+import vercel from '@sveltejs/adapter-vercel';
 import svg from '@poppanator/sveltekit-svg';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -12,7 +12,7 @@ export default {
   ],
 
   kit: {
-    adapter: netlify(),
+    adapter: vercel(),
     target: '#svelte',
     vite: {
       plugins: [svg()],

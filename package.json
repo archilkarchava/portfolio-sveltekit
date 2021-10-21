@@ -2,7 +2,7 @@
 	"name": "portfolio-sveltekit",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "concurrently \"svelte-kit dev\" \"yarn types:generate --watch\"",
+		"dev": "concurrently \"svelte-kit dev\" \"npm run types:generate --watch\"",
 		"build": "svelte-kit build",
 		"preview": "svelte-kit preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",

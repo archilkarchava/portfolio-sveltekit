@@ -18,7 +18,7 @@
 </script>
 
 <script lang="ts">
-  import githubIconUrl from '$assets/github.svg?url';
+  import GithubIcon from '$assets/github.svelte';
   import { GITHUB_LOGIN } from '$lib/constants';
   import type { PinnedRepositories } from '$types/common';
 
@@ -55,13 +55,7 @@
           rel="noopener noreferrer"
           class="text-current hover:opacity-70"
         >
-          <img
-            alt="Github Icon"
-            src={githubIconUrl}
-            width="36px"
-            height="36px"
-            class="w-6 h-6 sm:w-9 sm:h-9"
-          />
+          <GithubIcon class="w-6 h-6 sm:w-9 sm:h-9" alt="Github Icon" />
         </a>
       </div>
     </div>

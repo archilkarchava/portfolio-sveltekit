@@ -1,7 +1,6 @@
 import preprocess from 'svelte-preprocess';
 import path from 'path';
 import vercel from '@sveltejs/adapter-vercel';
-import svg from '@poppanator/sveltekit-svg';
 
 /** @type {import('@sveltejs/kit').Config} */
 export default {
@@ -15,7 +14,6 @@ export default {
     adapter: vercel(),
     target: '#svelte',
     vite: {
-      plugins: [svg()],
       resolve: {
         alias: {
           $components: path.resolve('./src/components'),

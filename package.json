@@ -43,6 +43,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-vercel": "^1.0.0-next.0",
 		"@urql/core": "^2.3.3",
 		"graphql": "^15.6.1",
 		"xss": "^1.0.10"

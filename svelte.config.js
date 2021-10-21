@@ -1,7 +1,6 @@
 import preprocess from 'svelte-preprocess';
 import path from 'path';
 import netlify from '@sveltejs/adapter-netlify';
-import svg from '@poppanator/sveltekit-svg';
 
 /** @type {import('@sveltejs/kit').Config} */
 export default {
@@ -15,7 +14,6 @@ export default {
     adapter: netlify(),
     target: '#svelte',
     vite: {
-      plugins: [svg()],
       resolve: {
         alias: {
           $components: path.resolve('./src/components'),

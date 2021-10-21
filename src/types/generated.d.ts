@@ -21315,11 +21315,11 @@ type PinnedRepositoriesQueryVariables = Exact<{
 }>;
 
 
-type PinnedRepositoriesQuery = { user?: Maybe<{ pinnedItems: { nodes?: Maybe<Array<Maybe<{ id: string, name: string, descriptionHTML: any, url: any, homepageUrl?: Maybe<any> } | {}>>> } }> };
+type PinnedRepositoriesQuery = { user?: { pinnedItems: { nodes?: Array<{ id: string, name: string, descriptionHTML: any, url: any, homepageUrl?: any | null | undefined } | {} | null | undefined> | null | undefined } } | null | undefined };
 
 type ProfileInfoQueryVariables = Exact<{
   login: Scalars['String'];
 }>;
 
 
-type ProfileInfoQuery = { user?: Maybe<{ name?: Maybe<string>, email: string, bioHTML: any }> };
+type ProfileInfoQuery = { user?: { name?: string | null | undefined, email: string, bioHTML: any } | null | undefined };

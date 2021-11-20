@@ -1,6 +1,6 @@
 import preprocess from 'svelte-preprocess';
 import path from 'path';
-import netlify from '@sveltejs/adapter-netlify';
+import cloudflare from '@sveltejs/adapter-cloudflare';
 
 /** @type {import('@sveltejs/kit').Config} */
 export default {
@@ -11,7 +11,7 @@ export default {
   ],
 
   kit: {
-    adapter: netlify(),
+    adapter: cloudflare(),
     target: '#svelte',
     vite: {
       resolve: {

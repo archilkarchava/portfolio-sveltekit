@@ -3896,7 +3896,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql@npm:^15.6.1":
+"graphql@npm:^15.7.2":
   version: 15.7.2
   resolution: "graphql@npm:15.7.2"
   checksum: eacb746e2981d0c346ef7365601873963af5356f64ce4d890ab89d213c67bf5bc1ae957b93c3902198798774c842b55dff219f38bad858691765e4debc265750
@@ -5612,7 +5612,7 @@ __metadata:
     eslint: ^8.2.0
     eslint-config-prettier: ^8.3.0
     eslint-plugin-svelte3: ^3.2.1
-    graphql: ^15.6.1
+    graphql: ^15.7.2
     postcss: ^8.3.11
     postcss-load-config: ^3.1.0
     prettier: ^2.4.1

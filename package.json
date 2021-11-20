@@ -44,7 +44,7 @@
   "type": "module",
   "dependencies": {
     "@urql/core": "^2.3.5",
-    "graphql": "^15.6.1",
+    "graphql": "^15.7.2",
     "xss": "^1.0.10"
   },
   "packageManager": "yarn@3.1.0"
